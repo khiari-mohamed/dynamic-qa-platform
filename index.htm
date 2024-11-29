@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Q&A Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror/lib/codemirror.css">
+  <script src="https://cdn.jsdelivr.net/npm/codemirror/lib/codemirror.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror/mode/python/python.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      background-image: url('67443.jpg'); 
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2rem;
+    }
+    .slide {
+      display: none;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .slide.active-slide {
+      display: block;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .navigation {
+      margin-top: 20px;
+      text-align: center;
+    }
+    #download {
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Dynamic Q&A Platform</h1>
+    <div id="slides"></div>
+    <div class="navigation">
+      <button id="prev" onclick="prevSlide()">Previous</button>
+      <button id="next" onclick="nextSlide()">Next</button>
+    </div>
+    <button id="submit" onclick="submitAnswers()">Submit & Download Answers</button>
+    <a id="download">Download Answers</a>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="slides.js"></script>
+
+</body>
+</html>

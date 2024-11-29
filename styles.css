@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Slide Styling */
+  .slide {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+  }
+  
+  .slide.active-slide {
+    display: block;
+  }
+  
+  /* Thank You Slide */
+  .thank-you-slide {
+    display: none; /* Initially hidden */
+    text-align: center;
+    padding: 40px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .thank-you-slide p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #download {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  #download:hover {
+    background-color: #218838;
+  }
+  
+  #download:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+  }
+  
+  /* Multiple Choice */
+  .multiple-choice {
+    margin: 10px 0;
+  }
+  
+  .multiple-choice button {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  /* Feedback */
+  .feedback {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .feedback.correct {
+    color: green;
+  }
+  
+  .feedback.incorrect {
+    color: red;
+  }
+  
+  /* Code Editor */
+  .code-editor {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Navigation */
+  .navigation {
+    margin: 20px;
+  }
+  
+  /* Download Button */
+  .download-btn {
+    background-color: #28a745;
+  }
+  
+  .download-btn:hover {
+    background-color: #218838;
+  }
+  
